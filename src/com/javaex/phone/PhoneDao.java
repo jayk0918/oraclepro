@@ -28,10 +28,10 @@ public class PhoneDao {
 		try {
 			Class.forName(driver);
 			System.out.println("JDBC 드라이버 로딩 성공");
-			System.out.println("DB 연결 준비......");
+			System.out.println("DB 연결 준비");
 			conn = DriverManager.getConnection(url, id, pw);
 			if (conn != null) {
-				System.out.println("DB 연결 성공...");
+				System.out.println("DB 연결 성공");
 			}
 
 		} catch (ClassNotFoundException e) {
