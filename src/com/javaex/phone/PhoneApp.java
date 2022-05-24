@@ -25,6 +25,7 @@ public class PhoneApp {
 			
 			switch(menu){
 				case 1:
+					System.out.println("<1.리스트>");
 					List<PersonVo> dbList = phoneDao.dbSelect();
 					for(int i=0; i<dbList.size(); i++) {
 						int personId = dbList.get(i).getPersonId();
